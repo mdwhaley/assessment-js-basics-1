@@ -154,13 +154,24 @@ console.log(days)
 */
 
 // CODE HERE
-
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
-
-
-
+// Create a tonsPerAcre variable in case it ever changes
+let tonsPerAcre = 6.5
+// create the three arrays empty
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
+// loop the fujiAcres array and multiply each day acres by tonsPerAcre and push that value to the fujiTons array
+for (let i = 0; i < fujiAcres.length; i++) {
+    fujiTons.push(fujiAcres[i] * tonsPerAcre)
+}
+// loop the galaAcres array and multiply each day acres by tonsPerAcre and push that value to the galaTons array
+for (let i = 0; i < galaAcres.length; i++) {
+    galaTons.push(galaAcres[i] * tonsPerAcre)
+}
+// loop the pinkAcres array and multiply each day acres by tonsPerAcre and push that value to the pinkTons array
+for (let i = 0; i < pinkAcres.length; i++) {
+    pinkTons.push(pinkAcres[i] * tonsPerAcre)
+}
 
 
 
