@@ -76,8 +76,8 @@ console.log(totalAcres)
 */
 
 // CODE HERE
-//created the averageDailyAcres variable by dividing the totalAcres by the sum of all the arrays lengths.
-let averageDailyAcres = (totalAcres / (fujiAcres.length + galaAcres.length + pinkAcres.length))
+//created the averageDailyAcres variable by dividing the totalAcres by the fuji array length which is 7 and the average ends up 63/7 = 9.
+let averageDailyAcres = totalAcres / fujiAcres.length
 //log the average which ends up 3
 console.log(averageDailyAcres)
 
