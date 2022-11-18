@@ -76,7 +76,7 @@ console.log(totalAcres)
 */
 
 // CODE HERE
-//created the averageDailyAcres variable by dividing the totalAcres by 21 but used the variables .length on each array in case we ever end up with 8 days in a week :/
+//created the averageDailyAcres variable by dividing the totalAcres by the sum of all the arrays lengths.
 let averageDailyAcres = (totalAcres / (fujiAcres.length + galaAcres.length + pinkAcres.length))
 //log the average which ends up 3
 console.log(averageDailyAcres)
