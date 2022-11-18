@@ -117,6 +117,15 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
+//created a while loop that will run as long as there are acres left
+while (acresLeft > 0) {
+    //adds a day to the days variable as average daily acres are picked
+    days += 1
+    //subtracts the days harvest from acresLeft
+    acresLeft -= averageDailyAcres
+}
+//log the number of days it took to pick 174 acres
+console.log(days)
 
 
 
