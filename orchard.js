@@ -270,7 +270,6 @@ console.log(totalProfit);
 // create a conversion from pennies to dollars and make it
 // more readable
 const penniesPerDollar = 100;
-// create
 // log all penny values to dollar
 console.log(`Profit for Fuji: $${fujiProfit / penniesPerDollar}`);
 console.log(`Profit for Gala: $${galaProfit / penniesPerDollar}`);
