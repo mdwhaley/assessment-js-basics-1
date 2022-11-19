@@ -52,7 +52,8 @@ const pinkPrice = .55
 // CODE HERE
 //Declare the totalAcres variable
 let totalAcres = 0
-//create the for loop to iterate through the days of the week using the fujiAcres array length
+// create the for loop to iterate through the days of the week 
+// using the fujiAcres array length
 for (let i = 0; i < fujiAcres.length; i++) {
     //add each orchards acres per day to the total acres variable
     totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i]
@@ -76,7 +77,9 @@ console.log(totalAcres)
 */
 
 // CODE HERE
-//created the averageDailyAcres variable by dividing the totalAcres by the fuji array length which is 7(days in a week) and the average ends up 63/7 = 9.
+//created the averageDailyAcres variable by dividing 
+// the totalAcres by the fuji array length which is 
+// 7(days in a week) and the average ends up 63/7 = 9.
 let averageDailyAcres = totalAcres / fujiAcres.length
 //log the average which ends up 9
 console.log(averageDailyAcres)
@@ -160,15 +163,18 @@ let tonsPerAcre = 6.5
 let fujiTons = []
 let galaTons = []
 let pinkTons = []
-// loop the fujiAcres array and multiply each day acres by tonsPerAcre and push that value to the fujiTons array
+// loop the fujiAcres array and multiply each day acres 
+// by tonsPerAcre and push that value to the fujiTons array
 for (let i = 0; i < fujiAcres.length; i++) {
     fujiTons.push(fujiAcres[i] * tonsPerAcre)
 }
-// loop the galaAcres array and multiply each day acres by tonsPerAcre and push that value to the galaTons array
+// loop the galaAcres array and multiply each day acres 
+// by tonsPerAcre and push that value to the galaTons array
 for (let i = 0; i < galaAcres.length; i++) {
     galaTons.push(galaAcres[i] * tonsPerAcre)
 }
-// loop the pinkAcres array and multiply each day acres by tonsPerAcre and push that value to the pinkTons array
+// loop the pinkAcres array and multiply each day acres 
+// by tonsPerAcre and push that value to the pinkTons array
 for (let i = 0; i < pinkAcres.length; i++) {
     pinkTons.push(pinkAcres[i] * tonsPerAcre)
 }
@@ -192,13 +198,41 @@ for (let i = 0; i < pinkAcres.length; i++) {
 */
 
 // CODE HERE 
+// declare the variables for the varieties
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
+// created a poundsPerTon constant because pounds per ton
+// should never change, however, what if we wanted to calculate
+// by metric ton later and had 100 varieties? We could change 
+// this constant in the code here once
+const poundsPerTon = 2000
+// iterate through the fujiTons loop adding each
+// value to sum up total tons and then multiplying 
+// by poundsPerTon to get the pounds value.
+for (let i = 0; i < fujiTons.length; i++) {
+    fujiPounds += fujiTons[i] * poundsPerTon
+}
+// log the pounds
+console.log(fujiPounds)
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+// iterate through the galaTons loop adding each
+// value to sum up total tons and then multiplying 
+// by poundsPerTon to get the pounds value.
+for (let i = 0; i < galaTons.length; i++) {
+    galaPounds += galaTons[i] * poundsPerTon
+}
+// log the pounds
+console.log(galaPounds)
 
-
-
+// iterate through the pinkTons loop adding each
+// value to sum up total tons and then multiplying 
+// by poundsPerTon to get the pounds value.
+for (let i = 0; i < pinkTons.length; i++) {
+    pinkPounds += pinkTons[i] * poundsPerTon
+}
+// log the pounds
+console.log(pinkPounds)
 
 
 
